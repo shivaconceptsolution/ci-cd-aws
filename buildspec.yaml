@@ -5,8 +5,8 @@ phases:
     commands:
       - echo "Building the static website"
       # Copy the index.html and style.css to the S3 bucket
-      - aws s3 cp ./index.html s3://my-cicd-deployment-bucket/
-      - aws s3 cp ./style.css s3://my-cicd-deployment-bucket/
+      - aws s3 cp ./index.html s3://ci-cd-scs-bucket/
+      - aws s3 cp ./style.css s3://ci-cd-scs-bucket/
 artifacts:
   files:
     - index.html
